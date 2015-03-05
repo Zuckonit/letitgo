@@ -1,2 +1,3 @@
 # letitgo
-go go go
+code of "go by example"
+
