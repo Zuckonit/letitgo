@@ -35,9 +35,9 @@ func main() {
     fmt.Println("slice copy of s3: ", s3)
 
     //address
-    fmt.Println("address of s: ", &s[0])
-    fmt.Println("address of s1: ", &s1[0])
-    fmt.Println("address of s3: ", &s3[0])
+    printPointer("s", s)
+    printPointer("s1", s1)
+    printPointer("s3", s3)
 
     //diff length
     td := make([][]int, 3)
@@ -53,4 +53,8 @@ func main() {
     //define and assign
     dass := [][]int{{1,2}, {1}}
     fmt.Println("define and assign slice dass: ", dass)
+}
+
+func printPointer(name string, any interface{}) {
+    fmt.Printf("the pointer of %s is: %p\n", name, &any)
 }
