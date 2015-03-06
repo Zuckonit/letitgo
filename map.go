@@ -21,4 +21,9 @@ func main() {
     fmt.Println("k2 in map: ", prs)
     _, prs2 := m["k3"]
     fmt.Println("k3 in map: ", prs2)
+    
+    //delete a key
+    delete(m, "k3")
+    fmt.Println("after delete: ", m)
+    //remove key
 }
